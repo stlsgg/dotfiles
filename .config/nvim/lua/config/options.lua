@@ -1,39 +1,57 @@
--- disable background
-vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
-vim.api.nvim_set_hl(0, "NonText", { bg = "NONE", ctermbg = "NONE" })
-vim.o.winblend = 0
-vim.o.pumblend = 0
-vim.o.relativenumber = true
-vim.o.number = true
+-- encoding and file format
+vim.opt.encoding = "utf-8"
+vim.opt.ff = "unix"
+
+-- line numbers
+vim.o.rnu = true
+vim.o.nu = true
+
+-- centrelized cursor
 vim.o.so = 999
 
--- other
+-- cursor-block
 vim.opt.guicursor = ""
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
+-- cursor line
+vim.o.cursorline = true
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+-- confirmation before leaving
+vim.o.confirm = true
 
-vim.opt.smartindent = true
+-- tabs and indentation
+vim.opt.ts = 4
+vim.opt.sts = 4
+vim.opt.sw = 4
+vim.opt.et = false
+vim.opt.si = true
 
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-vim.opt.undofile = true
+-- disable swap and backups
+-- but keep undo history
+vim.opt.swf = false
+vim.opt.bk = false
+vim.opt.udir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.udf = true
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+-- search in buffer
+vim.opt.hls = false
+vim.opt.is = true
+-- smartcase and ignorecase
+vim.opt.scs = true
+vim.opt.ic = true
 
-vim.opt.termguicolors = true
+-- i guess, add more colors to the nvim terminals?
+vim.opt.tgc = true
 
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
+vim.opt.scl = "yes"
 vim.opt.isfname:append("@-@")
 
-vim.opt.updatetime = 50
+-- update time
+vim.opt.ut = 500
 
-vim.opt.colorcolumn = "80"
+-- color column, vertical line
+vim.opt.textwidth = 80
+vim.opt.cc = "+1"
+
+-- whitespace chars displaying
+vim.o.list = true
+vim.opt.listchars = { tab = "» ", trail = '·', nbsp = '␣' }

@@ -1,3 +1,7 @@
+# important exports for screen capture!
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+exec systemctl --user start xdg-desktop-portal xdg-desktop-portal-wlr
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -8,9 +12,9 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot
+set $term kitty
 # Your preferred application launcher
-set $menu wmenu-run
+set $menu tofi-drun --config="$HOME/.config/tofi/config.ini" | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -48,11 +52,16 @@ input type:touchpad {
     middle_emulation enabled
     pointer_accel 0
 }
-#
+
+# mouse
+input type:pointer {
+	pointer_accel -1
+}
+
 input type:keyboard {
     xkb_layout us,ru
     xkb_options grp:win_space_toggle
-    repeat_delay 170
+    repeat_delay 190
     repeat_rate 50
 }
 
@@ -65,14 +74,19 @@ client.focused #e3e3e3 #0e0e0e #e3e3e3 #e3e3e3
 client.unfocused #0e0e0e #0e0e0e #e3e3e3 #e3e3e3
 
 # Disable border
-default_border pixel 0
-default_floating_border pixel 0
+default_border none
+default_floating_border none
+
+# gaps
+gaps inner 5
+gaps outer 5
+smart_gaps on
 
 # No mouse
 focus_follows_mouse no
 
 # Tabbed mode FOREVER
-workspace_layout tabbed
+# workspace_layout default
 
 # Font
 font pango:JetBrainsMono Nerd Font 12
