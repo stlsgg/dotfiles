@@ -24,7 +24,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 -- coping text (yank!)
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
-vim.keymap.set({"n", "v"}, "<C-c>", [["+Y]])
+vim.keymap.set({"n", "v"}, "<C-c>", [["+y]])
 
 -- also hightlight when yanking text
 vim.api.nvim_create_autocmd('TextYankPost', {
@@ -39,7 +39,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.keymap.set("i", "<C-c>", "<Esc>")
 
 vim.keymap.set("n", "Q", "<nop>")
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww ~/.bin/tmux-sessionizer.sh<CR>")
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww ~/.local/bin/tmux_sessionizer.sh<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
