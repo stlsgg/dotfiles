@@ -1,0 +1,7 @@
+image="$HOME/pics/wallpapers/gradient_1_blurred.jpg"
+font=JetBrainsMono Nerd Font
+font-size=20
+ignore-empty-password
+show-failed-attempts
+show-keyboard-layout
+indicator-caps-lock

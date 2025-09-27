@@ -1,7 +1,3 @@
--- encoding and file format
-vim.opt.encoding = "utf-8"
-vim.opt.ff = "unix"
-
 -- line numbers
 vim.o.rnu = true
 vim.o.nu = true

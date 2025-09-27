@@ -11,7 +11,12 @@ telescope.setup({
 	defaults = {
 		{ scroll_strategy = "limit" },
 		{ prompt_prefix = "Search: " },
-		{ selection_caret = ">> " }
+		{ selection_caret = ">> " },
+		{ file_ignore_patterns = {
+			"node_modules",
+			".git",
+			}
+		}
 	}
 })
 

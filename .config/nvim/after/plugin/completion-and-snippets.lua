@@ -1,56 +1,63 @@
-require("mini.snippets").setup()
-require("mini.completion").setup(-- No need to copy this inside `setup()`. Will be used automatically.
-{
-  -- Delay (debounce type, in ms) between certain Neovim event and action.
-  -- This can be used to (virtually) disable certain automatic actions by
-  -- setting very high delay time (like 10^7).
-  delay = { completion = 0, info = 0, signature = 0 },
+local cmp = require'cmp'
 
-  -- Configuration for action windows:
-  -- - `height` and `width` are maximum dimensions.
-  -- - `border` defines border (as in `nvim_open_win()`; default "single").
-  window = {
-    info = { height = 25, width = 80, border = nil },
-    signature = { height = 25, width = 80, border = nil },
-  },
-
-  -- Way of how module does LSP completion
-  lsp_completion = {
-    -- `source_func` should be one of 'completefunc' or 'omnifunc'.
-    source_func = 'completefunc',
-
-    -- `auto_setup` should be boolean indicating if LSP completion is set up
-    -- on every `BufEnter` event.
-    auto_setup = true,
-
-    -- A function which takes LSP 'textDocument/completion' response items
-    -- (each with `client_id` field for item's server) and word to complete.
-    -- Output should be a table of the same nature as input. Common use case
-    -- is custom filter/sort. Default: `default_process_items`
-    process_items = nil,
-
-    -- A function which takes a snippet as string and inserts it at cursor.
-    -- Default: `default_snippet_insert` which tries to use 'mini.snippets'
-    -- and falls back to `vim.snippet.expand` (on Neovim>=0.10).
-    snippet_insert = nil,
-  },
-
-  -- Fallback action as function/string. Executed in Insert mode.
-  -- To use built-in completion (`:h ins-completion`), set its mapping as
-  -- string. Example: set '<C-x><C-l>' for 'whole lines' completion.
-  fallback_action = '<C-n>',
-
-  -- Module mappings. Use `''` (empty string) to disable one. Some of them
-  -- might conflict with system mappings.
-  mappings = {
-    -- Force two-step/fallback completions
-    force_twostep = '<C-Space>',
-    force_fallback = '<A-Space>',
-
-    -- Scroll info/signature window down/up. When overriding, check for
-    -- conflicts with built-in keys for popup menu (like `<C-u>`/`<C-o>`
-    -- for 'completefunc'/'omnifunc' source function; or `<C-n>`/`<C-p>`).
-    scroll_down = '<C-f>',
-    scroll_up = '<C-b>',
-  },
+cmp.setup({
+	snippet = {
+		-- REQUIRED - you must specify a snippet engine
+		expand = function(args)
+			require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+		end,
+	},
+	window = {
+		completion = cmp.config.window.bordered(),
+		documentation = cmp.config.window.bordered(),
+	},
+	mapping = cmp.mapping.preset.insert({
+		['<C-b>'] = cmp.mapping.scroll_docs(-4),
+		['<C-f>'] = cmp.mapping.scroll_docs(4),
+		['<C-Space>'] = cmp.mapping.complete(),
+		['<C-e>'] = cmp.mapping.abort(),
+		['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+	}),
+	sources = cmp.config.sources({
+		{ name = 'nvim_lsp' },
+		{ name = 'luasnip' }, -- For luasnip users.
+	}, {
+		{ name = 'buffer' },
+	})
 })
+
+-- To use git you need to install the plugin petertriho/cmp-git and uncomment lines below
+-- Set configuration for specific filetype.
+--[[ cmp.setup.filetype('gitcommit', {
+	sources = cmp.config.sources({
+		{ name = 'git' },
+	}, {
+		{ name = 'buffer' },
+	})
+})
+require("cmp_git").setup() ]]-- 
+
+-- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline({ '/', '?' }, {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = {
+		{ name = 'buffer' }
+	}
+})
+
+-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline(':', {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = cmp.config.sources({
+		{ name = 'path' }
+	}, {
+		{ name = 'cmdline' }
+	}),
+	matching = { disallow_symbol_nonprefix_matching = false }
+})
+
+-- Set up lspconfig.
+-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+-- require('lspconfig')['<YOUR_LSP_SERVER>'].setup {
+-- 	capabilities = capabilities
+-- }

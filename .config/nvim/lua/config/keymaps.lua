@@ -55,7 +55,7 @@ vim.keymap.set('n', '<leader>sf', vim.cmd.w)
 vim.keymap.set('n', '<leader>sq', vim.cmd.wq)
 vim.keymap.set('n', '<leader>q', vim.cmd.q)
 
+
 -- file manager (netrw)
 vim.keymap.set('n', '<leader>oe', vim.cmd.Ex)
-vim.g.netrw_keepdir = 0
-
+vim.g.netrw_keepdir = 1
