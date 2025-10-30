@@ -1,0 +1,225 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "796d71318b3d528013de4273b05c4d13c6c5aeb63d4c3b21dd2466cc0cb5598e",
+    "telemetry.devDeviceId": "ce4bdb0e-460c-430a-89c3-d98738d65659",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [],
+        "emptyWindows": [
+            {
+                "backupFolder": "1761563902090"
+            }
+        ]
+    },
+    "windowControlHeight": 50,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/gregory/Projects/coffee-app": "__default__profile__",
+            "file:///home/gregory/projects/coffee-app": "__default__profile__",
+            "file:///home/gregory/projects/linters-and-validators": "__default__profile__",
+            "file:///home/gregory/personal/nodejs": "__default__profile__",
+            "file:///home/gregory/personal/codewars/screen_locking_patterns": "__default__profile__",
+            "file:///home/gregory/personal/codewars": "__default__profile__",
+            "file:///home/gregory/personal/codewars/street_fighter_2_character_selection": "__default__profile__",
+            "file:///home/gregory/personal/codewars/street_fighter_2_character_selection_p2": "__default__profile__",
+            "file:///home/gregory/personal/promises": "__default__profile__",
+            "file:///home/gregory/personal/simple_server": "__default__profile__",
+            "file:///home/gregory/personal/nodejs/events": "__default__profile__",
+            "file:///home/gregory/personal/nodejs/sockets": "__default__profile__",
+            "file:///home/gregory/sfi/review_sites/antonov/web-graphics-main": "__default__profile__",
+            "file:///home/gregory/sfi/review_sites/nekit/website-docker-main": "__default__profile__",
+            "file:///home/gregory/sfi/review_sites/markov/src": "__default__profile__",
+            "file:///home/gregory/personal/nodejs/pet-local-chat": "__default__profile__",
+            "file:///home/gregory/personal/algo_and_ds": "__default__profile__",
+            "file:///home/gregory/sfi/neironochki": "__default__profile__",
+            "file:///home/gregory/personal/codewars/counting_sheep": "__default__profile__",
+            "file:///home/gregory/personal/codewars/count_by_x": "__default__profile__",
+            "file:///home/gregory/sfi/oop_course": "__default__profile__",
+            "file:///home/gregory/personal/lua": "-5aaef098",
+            "file:///home/gregory/personal/nodejs/playground": "6d187c2c",
+            "file:///home/gregory/sfi/oop_course/oop/lab3": "6a464fb9",
+            "file:///home/gregory/sfi/oop_course_local": "6a464fb9"
+        },
+        "emptyWindows": {
+            "1761563902090": "__default__profile__"
+        }
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#1a1b26",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "#787c99",
+            "background": "#1a1b26",
+            "editorBackground": "#1a1b26",
+            "titleBarBackground": "#16161e",
+            "titleBarBorder": "#101014",
+            "activityBarBackground": "#16161e",
+            "activityBarBorder": "#16161e",
+            "sideBarBackground": "#16161e",
+            "sideBarBorder": "#101014",
+            "statusBarBackground": "#16161e",
+            "statusBarBorder": "#101014",
+            "statusBarNoFolderBackground": "#16161e",
+            "windowBorder": "#0d0f17"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 0,
+            "auxiliaryBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "backupPath": "/home/gregory/.config/Code - OSS/Backups/1761563902090",
+            "uiState": {
+                "mode": 0,
+                "x": 6,
+                "y": 43,
+                "width": 1914,
+                "height": 1034,
+                "zoomLevel": 2
+            }
+        },
+        "openedWindows": []
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 300,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "4d08c32ca21b551a61faaa8ff97e2015": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "7ee62010a01a16124fe5d6c7d4988424": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "8a9406c5f0cc44f10fa7abf3f31de469": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "5b9cbe897e3b348d0d507963f1ed9f1c": {
+                    "sideBarVisible": false,
+                    "auxiliaryBarVisible": false
+                },
+                "8fbb17f59c6cc00fe2309222ecf76d4f": {
+                    "sideBarVisible": false,
+                    "auxiliaryBarVisible": false
+                },
+                "3eb865fbe1c193992c7d6e85a9859394": {
+                    "sideBarVisible": false,
+                    "auxiliaryBarVisible": false
+                },
+                "700a2aa4e6d9ca1ee4710704c481ac94": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "3b592b10a2af865942629c3cbbe09d82": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "576ee2237d3922c7aea4847df47aad3d": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "df610f972b14a17c9796654b31f2700c": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "242e1eafe909df1d4a73be06df021555": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "bd79016817ff4344fafe6cdf646f52c5": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "c25f4e324353465ac3be2a3a4a9e34ca": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "7a664fa3a3decd292af9a72ace47dd30": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "3a03671b1c344da663172d213318787b": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "8ddd05aaccc27ad478676dd5b9d16f32": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "85976ac1c5304e5416f38726b86fdeec": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "477dbd1116d4adb0dcf108b11ed7c355": {
+                    "sideBarVisible": false,
+                    "auxiliaryBarVisible": false
+                },
+                "f397ba9b731c60119a8258d8a94201b4": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "e460f3086fbbd8bd1c9f6a40ab5ecc8e": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "9cf85d54d1127ec1ea8a51b9ad58127c": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "9ab9b915c3906ca9d9fcab3ae2ced35a": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "a1feda0c720700654d6397fa55ba02b7": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "79e6108be1ba79ed628801bfd3d95ffb": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "05b4b2755587cea45ad1e14f74281fad": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "d1bf8f3eab3c37de52eb01570e6737b4": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "3ff64183213445ca358ef0a0635bd81b": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    },
+    "userDataProfiles": [
+        {
+            "location": "-5aaef098",
+            "name": "lua",
+            "icon": "heart"
+        },
+        {
+            "location": "6d187c2c",
+            "name": "python",
+            "icon": "snake"
+        },
+        {
+            "location": "6a464fb9",
+            "name": "cpp",
+            "icon": "vr"
+        }
+    ]
+}

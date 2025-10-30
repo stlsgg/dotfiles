@@ -1,0 +1,59 @@
+{
+  "workbench.colorTheme": "Tokyo Night",
+  // tokyonight disable italics
+  "editor.tokenColorCustomizations": {
+    "[Tokyo Night]": { // or "[Tokyo Night Storm]"
+        "textMateRules": [{
+            "scope": [
+                "comment",
+                "meta.var.expr storage.type",
+                "keyword.control.flow",
+                "keyword.control.return",
+                "meta.directive.vue punctuation.separator.key-value.html",
+                "meta.directive.vue entity.other.attribute-name.html",
+                "tag.decorator.js entity.name.tag.js",
+                "tag.decorator.js punctuation.definition.tag.js",
+                "storage.modifier"
+            ],
+            "settings": {
+                "fontStyle": ""
+            }
+        }]
+    }
+},
+
+// editor rulers
+"editor.rulers": [
+  80,
+  100
+],
+
+  "editor.fontSize": 17,
+  "editor.cursorBlinking": "solid",
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "700",
+  "workbench.iconTheme": "vscode-jetbrains-icon-theme-2023-dark",
+  "workbench.startupEditor": "none",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.confirmSync": false,
+  "editor.tabSize": 2,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.newWindowProfile": "Default",
+  "terminal.integrated.stickyScroll.enabled": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.stickyScroll.enabled": false
+}
