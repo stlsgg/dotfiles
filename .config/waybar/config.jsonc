@@ -1,49 +1,50 @@
 {
-    "position": "top",
-    "layer": "top",
-    "height": "auto",
-    "modules-left": ["sway/workspaces", "sway/window"],
-    "modules-center": ["clock"],
-    "modules-right": ["sway/language", "battery"],
-    
-    // windows
-    "sway/window": {
-        "max-length": 50,
-        "format": "{app_id}",
-        // here window's names placed (rewrite id to title)
-        "rewrite": {
-            "firefox.*": "firefox",
-            "foot": "terminal",
-            ".*telegram.*": "telegram",
+	"position": "top",
+	"layer": "top",
+	"height": "auto",
+	"modules-left": ["sway/workspaces", "sway/window"],
+	"modules-center": ["clock"],
+	"modules-right": ["sway/language", "battery"],
+
+	// windows
+	"sway/window": {
+		"max-length": 50,
+		"format": "{app_id}",
+		// here window's names placed (rewrite id to title)
+		"rewrite": {
+			"firefox.*": "firefox",
+			"foot": "terminal",
+			".*telegram.*": "telegram",
 			".*obsproject.*": "obs",
 			".*kdenlive.*": "kdenlive",
-			".*flxzt.rnote.*": "draw"
-        }
-    },
+			".*flxzt.rnote.*": "draw",
+			".*Nautilus.*": "file manager"
+		}
+	},
 
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity} {icon}",
-        "format-full": "{capacity} {icon}",
-        "format-charging": "{capacity} ",
-        "format-plugged": "{capacity} ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
-    },
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{capacity} {icon}",
+		"format-full": "{capacity} {icon}",
+		"format-charging": "{capacity} ",
+		"format-plugged": "{capacity} ",
+		"format-alt": "{time} {icon}",
+		// "format-good": "", // An empty format will hide the module
+		// "format-full": "",
+		"format-icons": ["", "", "", "", ""]
+	},
 
-    "clock": {
-        "format": "{:%H:%M}",
-        "format-alt": "{:%a, %d. %b  %H:%M}"
-    },
+	"clock": {
+		"format": "{:%H:%M}",
+		"format-alt": "{:%a, %d. %b  %H:%M}"
+	},
 
-    "sway/language": {
-        "format": "{short}",
-        "hide-single-layout": true,
-    }
+	"sway/language": {
+		"format": "{short}",
+		"hide-single-layout": true,
+	}
 }

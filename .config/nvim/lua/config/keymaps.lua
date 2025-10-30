@@ -1,3 +1,7 @@
+-- mapleader
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
 -- clear search by pressing Esc
 vim.keymap.set("n", "<Esc>", "<cmd>nohls<CR>")
 
@@ -23,7 +27,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- coping text (yank!)
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
-vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set({ "n", "v" }, "<leader>Y", [["+Y]])
 vim.keymap.set({"n", "v"}, "<C-c>", [["+y]])
 
 -- also hightlight when yanking text

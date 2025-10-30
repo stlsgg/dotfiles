@@ -1,0 +1,17 @@
+[cursor.style]
+blinking = "Never"
+shape = "Block"
+
+[font]
+size = 18.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+# family = "Consolas"
+style = "Bold"
+
+[window]
+decorations = "full"
+dynamic_title = true
+opacity = 1.0
+dimensions = { columns = 100, lines = 24 }

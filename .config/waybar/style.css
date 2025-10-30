@@ -1,7 +1,7 @@
 * {
-  font-family: Inter, JetBrainsMono Nerd Font, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: Cantarell, JetBrainsMono Nerd Font, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 window#waybar {
@@ -43,10 +43,10 @@ button {
 }
 
 #workspaces {
-  padding: 0px 20px;
+  padding: 0px 10px;
 }
 #workspaces button {
-  padding: 0 5px;
+  padding: 0 3px;
   background-color: transparent;
   color: #ffffff;
 }
